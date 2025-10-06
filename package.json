@@ -4,7 +4,7 @@
   "description": "",
   "author": "truschery <truschery.work@gmail.com>",
   "type": "module",
-  "main": "./api.min.js",
+  "main": "./dist/api.min.js",
   "license": "MIT",
   "keywords": [
     "eimzo",
@@ -19,7 +19,7 @@
     "url": "git+https://github.com/truschery/eimzo-api.git"
   },
   "files": [
-    "./api.min.js"
+    "./dist/api.min.js"
   ],
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
