@@ -1,11 +1,9 @@
-import Client from "./Client/Client"
-import EimzoClient from "./Client/EimzoClient"
+import Client from "./Client"
 
 import PfxPlugin from './Plugins/PfxPlugin'
 
 export {
-    Client,
-    EimzoClient
+    Client
 }
 
 // Plugins
@@ -13,4 +11,4 @@ export {
     PfxPlugin
 }
 
-export default EimzoClient
+export default Client

@@ -1,11 +1,15 @@
-import EimzoClient from '../Client/EimzoClient'
+import Client from '../Client'
 
 export default class PfxPlugin
 {
-    client = new EimzoClient
+
+    constructor(client)
+    {
+        this.client = client ?? new Client
+    }
 
     async listAllCertificates()
     {
-        return eimzoApi.send({ plugin: "pfx", name: "list_all_certificates" })
+        return this.client.send({ plugin: "pfx", name: "list_all_certificates" })
     }
 }
