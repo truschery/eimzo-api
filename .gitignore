@@ -4,5 +4,3 @@ dist
 .idea
 
 .env
-
-./api.min.js

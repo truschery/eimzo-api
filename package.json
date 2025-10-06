@@ -4,11 +4,11 @@
   "description": "",
   "author": "truschery <truschery.work@gmail.com>",
   "type": "module",
-  "main": "./api.min.js",
-  "module": "./api.min.js",
+  "main": "./dist/api.min.js",
+  "module": "./dist/api.min.js",
   "exports": {
     ".": {
-      "import": "./api.min.js"
+      "import": "./dist/api.min.js"
     }
   },
   "license": "MIT",
