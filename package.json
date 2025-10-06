@@ -19,7 +19,7 @@
     "url": "git+https://github.com/truschery/eimzo-api.git"
   },
   "files": [
-    "./dist"
+    "./api.min.js"
   ],
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
