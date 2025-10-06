@@ -4,7 +4,13 @@
   "description": "",
   "author": "truschery <truschery.work@gmail.com>",
   "type": "module",
-  "main": "./dist/api.min.js",
+  "main": "./api.min.js",
+  "module": "./api.min.js",
+  "exports": {
+    ".": {
+      "import": "./api.min.js"
+    }
+  },
   "license": "MIT",
   "keywords": [
     "eimzo",

@@ -4,7 +4,7 @@ export default {
     input: 'src/index.js',
     output: [
         {
-            file: './dist/api.min.js',
+            file: './api.min.js',
             format: 'es',
             plugins: [
                 terser({
