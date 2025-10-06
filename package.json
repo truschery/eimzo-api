@@ -1,0 +1,35 @@
+{
+  "name": "@truschery/eimzo-api",
+  "version": "1.0.1",
+  "description": "",
+  "author": "truschery <truschery.work@gmail.com>",
+  "type": "module",
+  "main": "./api.min.js",
+  "license": "MIT",
+  "keywords": [
+    "eimzo",
+    "api"
+  ],
+  "homepage": "https://github.com/truschery/eimzo-api#readme",
+  "bugs": {
+    "url": "https://github.com/truschery/eimzo-api/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/truschery/eimzo-api.git"
+  },
+  "files": [
+    "./dist"
+  ],
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "rollup --config"
+  },
+  "devDependencies": {
+    "@rollup/plugin-terser": "^0.4.4",
+    "rollup": "^4.44.1"
+  },
+  "publishConfig": {
+    "access": "public"
+  }
+}
