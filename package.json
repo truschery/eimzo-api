@@ -6,6 +6,7 @@
   "type": "module",
   "main": "./dist/api.min.js",
   "module": "./dist/api.min.js",
+  "types": "dist/index.d.ts",
   "exports": {
     ".": {
       "import": "./dist/api.min.js"
@@ -33,9 +34,14 @@
   },
   "devDependencies": {
     "@rollup/plugin-terser": "^0.4.4",
-    "rollup": "^4.44.1"
+    "@rollup/plugin-typescript": "^12.1.4",
+    "rollup": "^4.44.1",
+    "typescript": "^5.9.3"
   },
   "publishConfig": {
     "access": "public"
+  },
+  "dependencies": {
+    "tslib": "^2.8.1"
   }
 }
