@@ -5,6 +5,7 @@ export default class Client implements Clientable
 {
     socket: null|WebSocket          = null
     isConnected: boolean            = false
+    timeout: number                 = 2000
 
     constructor()
     {
@@ -19,19 +20,15 @@ export default class Client implements Clientable
         return `${host}/service/cryptapi`
     }
 
-    async connect()
+    async connect(): Promise<boolean>
     {
-        if(this.isConnected) return Promise.resolve()
+        if(this.isConnected) return Promise.resolve(true)
         return new Promise((resolve, reject) => {
             this.socket = new WebSocket(this.url)
 
             this.socket.onopen = () => {
                 this.isConnected = true
                 resolve(true)
-            }
-        
-            this.socket.onerror = (event) => {
-                // TODO: Узнать какие варианты ошибок могут тут быть
             }
 
             this.socket.onclose = e => {
@@ -63,15 +60,20 @@ export default class Client implements Clientable
             if(!this.isConnected) await this.connect()
 
             if (!this.socket || this.socket.readyState !== WebSocket.OPEN) {
-                reject(new Error('WebSocket not connected'))
+                reject({
+                    message: 'WebSocket not connected',
+                    code: null
+                })
                 return
             }
+            let handeled = false
             
             const handlerMessage = (event: any) => {
                 const response: T = JSON.parse(event.data)
 
                 // @ts-ignore
                 this.socket.removeEventListener('message', handlerMessage)
+                handeled = true
 
 
                 !response.success ? reject(response) : resolve(response)
@@ -80,6 +82,17 @@ export default class Client implements Clientable
             this.socket.addEventListener('message', handlerMessage)
 
             this.socket.send(JSON.stringify(data))
+
+            setTimeout(() => {
+                if(!handeled){
+                    // @ts-ignore
+                    this.socket.removeEventListener('message', handlerMessage)
+                    reject({
+                        message: `TimeoutError: Failed receive response`,
+                        code: null,
+                    })
+                }
+            }, this.timeout)
         })
     }
 

@@ -9,6 +9,7 @@ export {
 }
 
 export {
-    Pfx
+    Pfx,
+    Pkcs7
 } from './types'
 
