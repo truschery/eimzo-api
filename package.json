@@ -12,7 +12,8 @@
   "types": "dist/index.d.ts",
   "exports": {
     ".": {
-      "import": "./dist/api.min.js"
+      "import": "./dist/api.min.js",
+      "types": "./dist/index.d.ts"
     }
   },
   "scripts": {
@@ -33,7 +34,8 @@
     "url": "git+https://github.com/truschery/eimzo-api.git"
   },
   "files": [
-    "./dist/api.min.js"
+    "./dist/api.min.js",
+    "./dist/index.d.ts"
   ],
   "devDependencies": {
     "@rollup/plugin-terser": "^0.4.4",
