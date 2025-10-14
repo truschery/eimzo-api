@@ -11,15 +11,15 @@
   <a href="https://npm-stat.com/charts.html?package=@truschery/eimzo-apit"><img src="https://img.shields.io/npm/dm/@truschery/eimzo-api?style=flat-square" /></a>
   <br />
   <br />
-  <a href="#">Features</a>
+  <a href="#features">Features</a>
   <span>&nbsp;&nbsp;•&nbsp;&nbsp;</span>
-  <a href="#">Installation</a>
+  <a href="#installation">Installation</a>
   <span>&nbsp;&nbsp;•&nbsp;&nbsp;</span>
-  <a href="https://www.prisma.io/docs/">Docs</a>
+  <a href="#documentation">Docs</a>
   <span>&nbsp;&nbsp;•&nbsp;&nbsp;</span>
-  <a href="#">Example</a>
+  <a href="#example">Example</a>
   <span>&nbsp;&nbsp;•&nbsp;&nbsp;</span>
-  <a href="#">License</a>
+  <a href="#license">License</a>
   <br />
   <hr />
 </div>
