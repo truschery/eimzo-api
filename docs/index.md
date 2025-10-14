@@ -1,20 +1,20 @@
 # Documentation @truschery/eimzo-api
 
-Быстрый и легковесный пакет предназначенный для взаимодействия с API Eimzo на JavaScript.
+A fast and lightweight package designed to interact with the Eimzo API in JavaScript.
 
-## Содержание
-- Установка
-- API
-- Интерфейсы
+## Contents
+- [Installation](#installation)
+- [API](#api)
+- [Interfaces](#interfaces)
 
-## Установка
+## Installation
 
 ### Install with npm
 ```js
 npm install @truschery/eimzo-api@latest
 ```
 
-Создать объект клиента для взаимодействия с API
+Create a client object for interacting with the API
 ```
 import Eimzo from '@truschery/eimzo-api'
 
@@ -22,35 +22,42 @@ const client = new Eimzo
 ```
 
 ## API
-Класс Eimzo позволяет обращаться к запросам Eimzo плагинам
+The Eimzo class allows you to access Eimzo requests for plugins.
 ### Pfx
-#### Получить список всех сертификатов
+#### Get a list of all certificates
 > client.pfx.listAllCertificates(): Promise<Pfx.ListAllCertificatesResponse>
-### Загрузить сертификат в Eimzo
+### Load certificate to Eimzo
 > client.pfx.loadKey(disk: string, path: string, name: string, alias: string): Promise<Pfx.LoadKeyResponse>
+- disk: Pfx.Certificate.disk 
+- path: Pfx.Certificate.path
+- name: Pfx.Certificate.name 
+- alias: Pfx.Certificate.alias 
 
 
 ### Pkcs7
-#### Создать Pkcs7 подписав ключом
+#### Create Pkcs7 signed with certificate
 > createPkcs7(base64: string, keyId: string, detached: Pkcs7.isDetached): Promise<Pkcs7.CreatePkcs7Response>
+- base64: Base64 string 
+- keyId: keyId is returned in the loadKey method
+- detached: if is 'yes' = A PKCS7 document will be created without the source data attachment
 
 
 ## Interfaces
 ### Pfx
 #### Pfx.Plugin
-> Реализует API интерфес плагина Eimzo
+> Implements the API interface of the Eimzo plugin
 #### Pfx.Certificate 
-> Интерфейс сертификата Eimzo
+> Pfx certificate interface
 #### Pfx.ListAllCertificatesResponse
-> Интерфейс ответа при получении списка сертификатов
+> Response interface when receiving a list of certificates
 #### Pfx.LoadKeyResponse
-> Интерфейс ответа при загрузке сертификата 
+> Response interface when load a certificate 
 
 ### Pkcs7
 #### Pkcs7.isDetached
-> Тип указывающий значение для создания Pkcs7
+> Type indicating detached value when creating Pkcs7
 #### Pkcs7.Plugin
-> Реализует API интерфес плагина Eimzo
+> Implements the API interface of the Eimzo plugin
 #### Pkcs7.CreatePkcs7Response
-> Интерфейс ответа при создании Pkcs7
+> Response interface when creating Pkcs7
 
