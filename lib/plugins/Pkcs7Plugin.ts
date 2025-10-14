@@ -1,13 +1,12 @@
-import {type Clientable, Pluginable} from "../types";
-import {Pkcs7} from "../types";
+import {Pkcs7, Eimzo} from "../types";
 
 
-export default class Pkcs7Plugin implements Pluginable, Pkcs7.Plugin
+export default class Pkcs7Plugin implements Pkcs7.Plugin
 {
 
-    client: Clientable
+    client: Eimzo.Client
 
-    constructor(client: Clientable)
+    constructor(client: Eimzo.Client)
     {
         this.client = client
     }

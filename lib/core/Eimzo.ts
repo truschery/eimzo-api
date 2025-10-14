@@ -4,7 +4,9 @@ import {
     Pkcs7Plugin,
 } from '../plugins'
 
-export default class Eimzo extends Client
+import { Eimzo } from '../types'
+
+export default class EimzoInstance extends Client implements Eimzo.Instance
 {
     pfx: PfxPlugin;
     pkcs7: Pkcs7Plugin;

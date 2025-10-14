@@ -43,6 +43,15 @@ The Eimzo class allows you to access Eimzo requests for plugins.
 
 
 ## Interfaces
+
+### Eimzo
+#### Eimzo.Instance
+> Implementation of the Eimzo class
+#### Eimzo.Client
+> Interface describing methods for accessing Eimzo
+#### Eimzo.Plugin
+> Basic interface required to create a plugin for API processing 
+
 ### Pfx
 #### Pfx.Plugin
 > Implements the API interface of the Eimzo plugin
