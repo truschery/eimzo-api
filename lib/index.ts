@@ -7,7 +7,7 @@ export {
     Client
 }
 
-export {
+export type {
     Pfx,
     Pkcs7,
     Eimzo
