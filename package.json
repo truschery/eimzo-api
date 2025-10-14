@@ -34,9 +34,7 @@
     "url": "git+https://github.com/truschery/eimzo-api.git"
   },
   "files": [
-    "./dist/api.min.js",
-    "./dist/index.d.ts",
-    "./dist/types"
+    "./dist"
   ],
   "devDependencies": {
     "@rollup/plugin-terser": "^0.4.4",
