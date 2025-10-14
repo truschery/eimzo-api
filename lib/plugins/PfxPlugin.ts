@@ -1,15 +1,14 @@
 import type {
-    Pluginable,
-    Clientable,
+    Eimzo,
     Pfx
 } from "../types";
 
-export default class PfxPlugin implements Pluginable, Pfx.Plugin
+export default class PfxPlugin implements Pfx.Plugin
 {
 
-    client: Clientable
+    client: Eimzo.Client
 
-    constructor(client: Clientable)
+    constructor(client: Eimzo.Client)
     {
         this.client = client
     }

@@ -1,7 +1,7 @@
-import {BaseEimzoApiResponse, Clientable} from "../types";
+import {BaseEimzoApiResponse, Eimzo} from "../types";
 
 
-export default class Client implements Clientable
+export default class Client implements Eimzo.Client
 {
     socket: null|WebSocket          = null
     isConnected: boolean            = false

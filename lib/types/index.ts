@@ -1,20 +1,13 @@
-import type {
-    Pluginable,
-} from "./plugin";
-
-import type {
-    Clientable
-} from "./client";
-
 import {
     BaseEimzoApiResponse,
     Pfx,
     Pkcs7,
 } from "./api";
 
+import { Eimzo } from "./eimzo";
+
 export {
-    Pluginable,
-    Clientable,
+    Eimzo,
 
     // APIs
     Pfx,

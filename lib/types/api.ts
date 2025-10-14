@@ -1,3 +1,4 @@
+import { Eimzo } from "./eimzo";
 
 
 export interface BaseEimzoApiResponse {
@@ -10,7 +11,7 @@ export interface BaseEimzoApiResponse {
  *  Pfx Eimzo Api
  */
 export namespace Pfx {
-    export interface Plugin {
+    export interface Plugin extends Eimzo.Plugin {
         listAllCertificates: () => Promise<ListAllCertificatesResponse>;
         loadKey: ( disk: string, path: string, name: string, alias: string ) => Promise<any>;
     }
@@ -36,7 +37,7 @@ export namespace Pfx {
 export namespace Pkcs7 {
     export type isDetached = 'yes' | 'no' | '';
 
-    export interface Plugin {
+    export interface Plugin extends Eimzo.Plugin {
         createPkcs7: (base64: string, keyId: string, detached: isDetached) => Promise<CreatePkcs7Response>
     }
 
