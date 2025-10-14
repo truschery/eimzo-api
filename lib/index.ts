@@ -10,6 +10,7 @@ export {
 export type {
     Pfx,
     Pkcs7,
-    Eimzo
+    Eimzo,
+    BaseEimzoApiResponse
 } from './types'
 
