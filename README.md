@@ -2,39 +2,43 @@
 
 [//]: # (### [English]&#40;&#41; [Russian]&#40;&#41;)
 
-<p align="center">
-    Lightweight package for interacting with the Eimzo API
-</p>
 
 <div align="center">
+  <h1>Eimzo API</h1>
+  <a href="https://www.npmjs.org/package/@truschery/eimzo-api"><img src="https://img.shields.io/npm/v/@truschery/eimzo-api?style=flat-square" /></a>
+  <a href="https://packagephobia.com/result?p=@truschery/eimzo-api"><img src="https://packagephobia.com/badge?p=@truschery/eimzo-api" /></a>
+  <a href="https://bundlephobia.com/package/@truschery/eimzo-api@latest"><img src="https://img.shields.io/bundlephobia/minzip/@truschery/eimzo-api?style=flat-square" /></a>
+  <a href="https://npm-stat.com/charts.html?package=@truschery/eimzo-apit"><img src="https://img.shields.io/npm/dm/@truschery/eimzo-api?style=flat-square" /></a>
+  <br />
+  <br />
+  <a href="#">Features</a>
+  <span>&nbsp;&nbsp;•&nbsp;&nbsp;</span>
+  <a href="#">Installation</a>
+  <span>&nbsp;&nbsp;•&nbsp;&nbsp;</span>
+  <a href="https://www.prisma.io/docs/">Docs</a>
+  <span>&nbsp;&nbsp;•&nbsp;&nbsp;</span>
+  <a href="#">Example</a>
+  <span>&nbsp;&nbsp;•&nbsp;&nbsp;</span>
+  <a href="#">License</a>
+  <br />
+  <hr />
+</div>
 
-[![npm version](https://img.shields.io/npm/v/@truschery/eimzo-api?style=flat-square)](https://www.npmjs.org/package/@truschery/eimzo-api)
-[![install size](https://packagephobia.com/badge?p=@truschery/eimzo-api)](https://packagephobia.com/result?p=@truschery/eimzo-api)
-[![npm bundle size](https://img.shields.io/bundlephobia/minzip/@truschery/eimzo-api?style=flat-square)](https://bundlephobia.com/package/@truschery/eimzo-api@latest)
-[![npm downloads](https://img.shields.io/npm/dm/@truschery/eimzo-api?style=flat-square)](https://npm-stat.com/charts.html?package=@truschery/eimzo-api)
-[![Contributors](https://img.shields.io/github/contributors/truschery/eimzo-api?style=flat-square)](CONTRIBUTORS.md)
-
-</div> 
-
-## Table of Contents
-
-- [Features](#features)
-- [Installation](#installation)
-- [Example](#example)
-- [API](#api)
-- [Interfaces](#interfaces)
-- [Contributors](#contributors)
 
 ## Features
+Lightweight package for interacting with the Eimzo API:
 - Connecting to the Eimzo application using WebSocket
 - Implementing calls to the Eimzo API using Typescript
 
 ## Installation
 
-Installing eimzo-api
+### Install with npm
 ```js
 npm install @truschery/eimzo-api@latest
 ```
+
+## Documentation
+To view the complete documentation for the package, you can visit [Docs](docs/index.md)
 
 ## Example
 The package exports two classes:
@@ -51,21 +55,13 @@ const certificates = await client.pfx.listAllCertificates()
 
 // ...
 ```
-
-## API
-
-### Pfx Plugin 
-#### pfx.listAllCertificates()
-#### pfx.loadKey(disk: string, path: string, name: string, alias: string)
-
-### Pkcs7
-#### pkcs7.createPkcs7(base64: string, keyId: string, detached: Pkcs7.isDetached)
+To see more, you can visit the page [Docs](docs/index.md)
 
 
-## Interfaces 
-...In the process...
+## License
+This package is distributed under the [MIT](LICENSE) license.
 
-## Contributors
-...In the process...
+
+
 
 
