@@ -12,6 +12,7 @@
     "moduleResolution": "node",
     "declaration": true,
     "declarationMap": true,
+    "declarationDir": "dist",
     "sourceMap": true,
     "noEmit": true
   },

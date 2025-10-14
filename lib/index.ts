@@ -1,15 +1,15 @@
-import Eimzo from "./core/Eimzo";
+import EimzoInstance from "./core/Eimzo";
 import Client from "./core/Client";
 
-export default Eimzo;
+export default EimzoInstance;
 
 export {
-    Client,
-    Eimzo
+    Client
 }
 
 export {
     Pfx,
-    Pkcs7
+    Pkcs7,
+    Eimzo
 } from './types'
 
