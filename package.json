@@ -1,6 +1,6 @@
 {
   "name": "@truschery/eimzo-api",
-  "version": "1.1.1",
+  "version": "1.1.7",
   "description": "Lightweight Eimzo Api Package",
   "author": {
     "name": "truschery",
@@ -34,8 +34,7 @@
     "url": "git+https://github.com/truschery/eimzo-api.git"
   },
   "files": [
-    "./dist/api.min.js",
-    "./dist/index.d.ts"
+    "./dist"
   ],
   "devDependencies": {
     "@rollup/plugin-terser": "^0.4.4",
