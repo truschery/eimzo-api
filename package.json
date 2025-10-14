@@ -35,7 +35,8 @@
   },
   "files": [
     "./dist/api.min.js",
-    "./dist/index.d.ts"
+    "./dist/index.d.ts",
+    "./dist/types"
   ],
   "devDependencies": {
     "@rollup/plugin-terser": "^0.4.4",
