@@ -8,7 +8,7 @@
   <a href="https://www.npmjs.org/package/@truschery/eimzo-api"><img src="https://img.shields.io/npm/v/@truschery/eimzo-api?style=flat-square" /></a>
   <a href="https://packagephobia.com/result?p=@truschery/eimzo-api"><img src="https://packagephobia.com/badge?p=@truschery/eimzo-api" /></a>
   <a href="https://bundlephobia.com/package/@truschery/eimzo-api@latest"><img src="https://img.shields.io/bundlephobia/minzip/@truschery/eimzo-api?style=flat-square" /></a>
-  <a href="https://npm-stat.com/charts.html?package=@truschery/eimzo-apit"><img src="https://img.shields.io/npm/dm/@truschery/eimzo-api?style=flat-square" /></a>
+  <a href="https://npm-stat.com/charts.html?package=@truschery/eimzo-api"><img src="https://img.shields.io/npm/dm/@truschery/eimzo-api?style=flat-square" /></a>
   <br />
   <br />
   <a href="#features">Features</a>

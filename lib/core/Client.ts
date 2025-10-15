@@ -5,7 +5,6 @@ export default class Client implements Eimzo.Client
 {
     socket: null|WebSocket          = null
     isConnected: boolean            = false
-    timeout: number                 = 2000
 
     constructor()
     {
@@ -82,17 +81,6 @@ export default class Client implements Eimzo.Client
             this.socket.addEventListener('message', handlerMessage)
 
             this.socket.send(JSON.stringify(data))
-
-            setTimeout(() => {
-                if(!handeled){
-                    // @ts-ignore
-                    this.socket.removeEventListener('message', handlerMessage)
-                    reject({
-                        message: `TimeoutError: Failed receive response`,
-                        code: null,
-                    })
-                }
-            }, this.timeout)
         })
     }
 
