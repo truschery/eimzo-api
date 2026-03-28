@@ -2,13 +2,12 @@ import Client from "./Client";
 import {
     PfxPlugin,
     Pkcs7Plugin,
+    TrustStore,
+    TrustStoreJks,
 } from '../plugins'
 
-import { Eimzo } from '../types'
-import TrustStore from "../plugins/TrustStore";
-import TrustStoreJks from "../plugins/TrustStoreJks";
 
-export default class EimzoInstance extends Client implements Eimzo.Instance
+export default class EimzoInstance extends Client
 {
     pfx: PfxPlugin;
     pkcs7: Pkcs7Plugin;

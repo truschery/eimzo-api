@@ -1,10 +1,10 @@
-import {type Clientable, Pluginable} from "../types";
+import {Eimzo} from "../types";
 
 export default class TrustStore {
 
-    client: Clientable
+    client: Eimzo.Client
 
-    constructor(client: Clientable)
+    constructor(client: Eimzo.Client)
     {
         this.client = client
     }
