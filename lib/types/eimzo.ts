@@ -6,7 +6,8 @@ export namespace Eimzo {
     export interface Instance extends Client
     {  
         pfx: Pfx.Plugin,
-        pkcs7: Pkcs7.Plugin
+        pkcs7: Pkcs7.Plugin,
+
     }
 
     export interface Client
