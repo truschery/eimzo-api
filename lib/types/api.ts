@@ -46,4 +46,12 @@ export namespace Pkcs7 {
         signer_serial_number: string;
         signature_hex: string;
     }
+
+    export interface GetAttachedInfo extends BaseEimzoApiResponse {
+
+    }
+
+    export interface GetDetachedInfo extends BaseEimzoApiResponse {
+
+    }
 }
